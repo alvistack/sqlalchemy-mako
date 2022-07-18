@@ -1,0 +1,4 @@
+python-mako source: no-debian-changes
+python-mako source: source-contains-prebuilt-windows-binary
+python-mako source: source-is-missing
+python-mako source: source-package-encodes-python-version
