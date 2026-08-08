@@ -6,8 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "Mako"
 description = "A super-fast templating language that borrows the best ideas from the existing templating languages."
 authors = [{name = "Mike Bayer", email = "mike@zzzcomputing.com"}]
-license = "MIT"
-license-files = ["LICENSE"]
+license = {text = "MIT"}
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Environment :: Web Environment",
@@ -110,9 +109,6 @@ namespaces = false
 
 [tool.setuptools.dynamic]
 version = {attr = "mako.__version__"}
-
-[tool.distutils.egg_info]
-tag-build = "dev"
 
 [tool.pytest.ini_options]
 addopts = "--tb native -v -r fxX -p warnings"
